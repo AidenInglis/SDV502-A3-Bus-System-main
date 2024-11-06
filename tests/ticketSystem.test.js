@@ -27,19 +27,19 @@ describe('Ticket System', () => {
     });
 
     test('booking a ticket for a specified destination', () => {//booking a ticket for a specified destination.
-        document.getElementById('name').value = 'John Doe';//set name to John Doe
-        document.getElementById('destination').value = 'New York';//set destination to New York
+        document.getElementById('name').value = 'Granny Sam';//set name to John Doe
+        document.getElementById('destination').value = 'New County';//set destination to New York
         document.getElementById('seats').value = 3;//set seats to 3
 
         handleFormSubmit({ preventDefault: () => {} });//submit form
 
         const message = document.getElementById("message").innerText;//get message
-        expect(message).toContain('New York');//expect message to contain New York  
+        expect(message).toContain('New County');//expect message to contain New York  
     });
 
     test('Verifying seat availability based on user input', () => {//Verifying seat availability based on user input.
-        document.getElementById('name').value = 'John Doe';//set name to John Doe
-        document.getElementById('destination').value = 'New York';//set destination to New York
+        document.getElementById('name').value = 'Granny Sam';//set name to John Doe
+        document.getElementById('destination').value = 'New County';//set destination to New York
         document.getElementById('seats').value = 3;//set seats to 3
 
         handleFormSubmit({ preventDefault: () => {} });//submit form
@@ -49,8 +49,8 @@ describe('Ticket System', () => {
     });
 
     test('Calculating the fare according to the number of tickets booked', () => {//Calculating the fare according to the number of tickets booked
-        document.getElementById('name').value = 'John Doe';//set name to John Doe
-        document.getElementById('destination').value = 'New York';//set destination to New York
+        document.getElementById('name').value = 'Granny Sam';//set name to John Doe
+        document.getElementById('destination').value = 'New County';//set destination to New York
         document.getElementById('seats').value = 3;//set seats to 3
         pricePerSeat = 10;//set price per seat to 10 as a constant and also just checking it was declared from the script file
 
