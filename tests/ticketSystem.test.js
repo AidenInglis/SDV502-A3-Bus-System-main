@@ -1,4 +1,3 @@
-const { JSDOM } = require('jsdom');//importing the JSDOM module to create a DOM so that testing works
 
 describe('Ticket System', () => {
     let dom;//declaring the dom variable
